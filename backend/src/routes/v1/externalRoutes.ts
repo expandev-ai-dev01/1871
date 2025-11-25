@@ -7,14 +7,13 @@
  */
 
 import { Router } from 'express';
-import * as registerController from '@/api/v1/external/register/controller';
 
 const router = Router();
 
 /**
- * @rule {be-route-configuration}
- * User registration route - public access
+ * @remarks
+ * External routes will be added here as features are implemented.
+ * Examples: authentication, public data access, webhooks, etc.
  */
-router.post('/register', registerController.postHandler);
 
 export default router;
